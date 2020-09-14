@@ -175,6 +175,7 @@
 # Q-17|
 
 # change=eval(input("Enter an amount of change less than $1.00 in cents: "))
+# quarters = change // 25
 # dimes = change//10
 # nickels = (change % 10) // 5
 # pennies = (change % 10) % 5
@@ -189,3 +190,12 @@
 #         print(i, end="  ")
 #         i = (i+1)%10
 #     print("")
+
+
+m = 4
+n = 8
+for i in range (0, m * n):
+    if i % n == 0:
+        print()
+    x = i % 10
+    print(x, end = " ")
